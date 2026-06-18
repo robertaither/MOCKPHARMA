@@ -1,0 +1,52 @@
+{
+  "model_path": "/home/raither/projects/MOCKPHARMA/models/trial_response_feature_engineered_model.joblib",
+  "best_run_id": "090de12b99e64088bbe91f3656e740dd",
+  "best_details": {
+    "run_id": "090de12b99e64088bbe91f3656e740dd",
+    "run_name": "02_raw_random_forest",
+    "feature_set": "raw",
+    "model_type": "random_forest",
+    "accuracy": 0.768,
+    "precision": 0.42777777777777776,
+    "recall": 0.6470588235294118,
+    "f1": 0.5150501672240803,
+    "roc_auc": 0.7867605540239812
+  },
+  "raw_features": [
+    "age",
+    "bmi",
+    "baseline_biomarker",
+    "dose_mg",
+    "adherence_pct",
+    "prior_treatments",
+    "sex",
+    "trial_arm"
+  ],
+  "engineered_features": [
+    "age",
+    "bmi",
+    "baseline_biomarker",
+    "dose_mg",
+    "adherence_pct",
+    "prior_treatments",
+    "dose_adherence_exposure",
+    "biomarker_per_dose",
+    "high_adherence",
+    "older_patient",
+    "high_bmi",
+    "multiple_prior_treatments",
+    "active_high_adherence",
+    "sex",
+    "trial_arm",
+    "age_group",
+    "bmi_group",
+    "biomarker_group",
+    "adherence_group"
+  ],
+  "target": "responder",
+  "feature_engineering_notes": [
+    "No target leakage used.",
+    "Features are simple synthetic clinical-style transformations.",
+    "This is a portfolio/demo project only."
+  ]
+}

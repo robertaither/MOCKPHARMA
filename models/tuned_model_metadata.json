@@ -1,0 +1,47 @@
+{
+  "model_path": "/home/raither/projects/MOCKPHARMA/models/trial_response_tuned_model.joblib",
+  "best_overall_details": {
+    "model_family": "random_forest",
+    "parent_run_id": "013f2e41a8d84d62abb6d2209f3af5e3",
+    "best_cv_f1": 0.5020400845406552,
+    "best_params": {
+      "classifier__max_depth": 6,
+      "classifier__min_samples_leaf": 8,
+      "classifier__n_estimators": 200
+    },
+    "test_accuracy": 0.7488,
+    "test_precision": 0.4,
+    "test_recall": 0.6386554621848739,
+    "test_f1": 0.4919093851132686,
+    "test_roc_auc": 0.7850167735078222
+  },
+  "engineered_features": [
+    "age",
+    "bmi",
+    "baseline_biomarker",
+    "dose_mg",
+    "adherence_pct",
+    "prior_treatments",
+    "dose_adherence_exposure",
+    "biomarker_per_dose",
+    "high_adherence",
+    "older_patient",
+    "high_bmi",
+    "multiple_prior_treatments",
+    "active_high_adherence",
+    "sex",
+    "trial_arm",
+    "age_group",
+    "bmi_group",
+    "biomarker_group",
+    "adherence_group"
+  ],
+  "target": "responder",
+  "selection_metric": "test_f1",
+  "notes": [
+    "GridSearchCV used with 5-fold stratified cross-validation.",
+    "Each parameter combination logged as a nested MLflow child run.",
+    "Best final model selected using held-out test F1.",
+    "This is portfolio/demo code only."
+  ]
+}
