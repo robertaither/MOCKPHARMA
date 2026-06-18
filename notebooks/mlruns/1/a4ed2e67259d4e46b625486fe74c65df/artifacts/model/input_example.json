@@ -1,1 +1,0 @@
-{"columns": ["age", "bmi", "baseline_biomarker", "dose_mg", "adherence_pct", "prior_treatments", "sex", "trial_arm"], "data": [[52.1, 25.7, 47.38, 25, 79.8, 0, "M", "active"], [55.9, 32.0, 63.1, 50, 94.6, 1, "M", "placebo"], [46.7, 24.2, 60.21, 25, 94.0, 1, "M", "placebo"]]}

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+notebooks/mlruns/
+mlflow.db
+mlflow.db-journal
+
+# Generated data
+data/*.csv
+
+# Generated models and plots
+models/*.joblib
+models/*.json
+models/*.png
+
+# VS Code
+.vscode/
+
+# OS/editor
+.DS_Store
+.idea/
+
+# Environment variables
+.env
